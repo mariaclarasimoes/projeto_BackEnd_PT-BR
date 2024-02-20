@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lojinha Online</title>
+</head>
+<body>
+    <!-- Barra de navegação superior -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-store"></i><strong> MALILU</strong>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clothes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jewelry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a class="nav-link" href="#">
+              <i class="fas fa-sign-in-alt"></i> Login
+          </a>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- Containers de produtos -->
+    <section id="users-list">
+    </section>
+
+    <!-- Tabela "MY SHOPPING CART" -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+            <th colspan="4" class="cart-header">MY SHOPPING CART</th>
+            </tr>
+            <tr>
+                <th>Item</th>
+                <th>Rating</th>
+                <th>Price</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <div class="table-container">
+      <!-- Tabela SHIPPING -->
+      <section>
+        <table id="shippingTable" class="newItem">
+            <tr>
+                <th colspan="3" class="cart-header">SHIPPING</th>
+            </tr>
+            <tr>
+              <td>Name:</td>
+              <td><input type="text" id="newName" placeholder="Full name"></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><input type="text" id="newEmail" placeholder="@example.com"></td>
+            </tr>
+            <tr>
+              <td>City:</td>
+              <td><input type="text" id="newCity" placeholder="1234 Main St"></td>
+            </tr>
+            <tr>
+              <td>State:</td>
+              <td><input type="text" id="newState" placeholder="Ex: Alabama"></td>
+            </tr>
+            <tr>
+              <td>Zip:</td>
+              <td><input type="text" id="newZip" placeholder="Zip Code"></td>
+              <td class="apply-button">
+                  <div class="button-container">
+                      <button onclick="newItemB()">
+                          <i class="fas fa-check"></i>
+                      </button>
+                  </div>
+              </td>
+            </tr>
+        </table>
+      </section>
+
+      <!-- Tabela SHIPPING COM ITEM EXISTENTE -->
+      <section class="items">
+        <table id="myTableB">
+            <tr>
+                <th>Fullname</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+      </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+/* EXPOSIÇÃO DOS PRODUTOS */
+.custom-navbar {
+    background-color: #507fe4; /* Cor de fundo azul */
+}
+
+/* Grid de apresentação dos produtos */
+#users-list {
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    justify-items: center;
+    align-content: flex-start; 
+}
+
+/* Card de produto */
+.card {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+  
+.card-img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+  
+.card-title {
+    text-align: center; 
+    margin: 2px 0; 
+    max-width: 200px; 
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a largura máxima */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar que o texto foi truncado */
+    
+}
+
+.card-title:hover {
+    white-space: normal; /* Quando o mouse está sobre o elemento, o texto quebra em várias linhas */
+}
+
+
+.rating-product {
+    text-align: center; /* Alinhar a classificação ao centro */
+    margin: 5px 0; /* Espaço vertical entre a classificação e outros elementos */
+    margin-bottom: 20px;
+}
+  
+.card-price {
+    text-align: right; /* Alinhar o preço ao centro */
+    margin: 5px 0; /* Espaço vertical entre o preço e outros elementos */
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.btn {
+    margin-left: 150px;
+}
+
+
+
+/* TABELA "MY SHOPPING CART" */
+.cart-header {
+    background-color: #033e7c; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento centralizado */
+    padding: 3px; /* Espaçamento interno */
+    text-align: center;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#myTable {
+    max-width:400px; /* Largura fixa da tabela */
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 15px;
+    transition: 0.2s;
+    text-align: center;
+    max-height: 20%;
+}
+
+#myTable th,
+#myTable td {
+    max-height: 50px; /* Altura máxima das células */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    text-overflow: ellipsis; /* Adiciona reticências (...) para texto longo */
+}
+
+table{
+    background-color: white;
+    width: 40%;
+}
+
+/* Linhas da tabela "meu carrinho" */
+/* Estilização - linha sim/linha não */
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 40%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
+.table-spacing {
+    margin-left: 100px; /* Ajuste o valor conforme necessário */
+}
+
+
+/* Estilo para a div que contém as tabelas */
+.table-container {
+    display: flex;
+    justify-content: space-around; /* Alinhar as tabelas horizontalmente */
+
+  }
+  
+  /* Estilo para a tabela SHIPPING */
+  #shippingTable {
+    width: 150%;
+    border-collapse: collapse;
+    max-width: 400px;
+  }
+  
+  /* Estilo para as células do cabeçalho */
+  #shippingTable th {
+    background-color: #033e7c;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Estilo para as células de dados */
+  #shippingTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilo para o botão de aplicar */
+  .apply-button {
+    text-align: center;
+  }
+  
+  /* Estilo para o botão */
+  .button-container button {
+    background-color: #033e7c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o ícone dentro do botão */
+  .button-container button i {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para a tabela SHIPPING COM ITEM EXISTENTE */
+  #myTableB {
+    width: 150%; /* Adicionei essa regra para que a tabela ocupe todo o espaço disponível */
+  }
+  
